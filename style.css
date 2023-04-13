@@ -15,17 +15,20 @@ body{
     font-family: inter;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .header{
     display: flex;
-    max-width: 885px;
+    max-width: 880px;
     padding-top: 45px;
     padding-bottom: 41px;
     border-bottom: 2px solid #545454;
-    margin-left: 199px;
     margin-bottom: 36.25px;
+    width: 100%;
 }
 
 .header__title{
@@ -45,11 +48,10 @@ body{
 
 .profile{
     display: flex;
-    margin-left: 199px;
-    margin-right: 199px;
     border: solid 2px coral;
     margin-bottom: 46.25px;
     max-width: 880px;
+    width: 100%;
 }
 
 .profile__image{
@@ -99,9 +101,10 @@ body{
     max-width: 882px;
     height: auto;
     border: solid 3px aquamarine;
-    margin-left: 199px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .element{
@@ -111,11 +114,12 @@ body{
     background-color: white;
     border-radius: 20px;
     z-index: 0;
+    margin-bottom: 20px;
 }
 
 .element__image{
     width: 100%;
-    height: auto;
+    height: 282px;
     z-index: 1;
 }
 
