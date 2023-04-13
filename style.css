@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("Inter-Thin.woff2?v=3.19") format("woff2"),
+    url("Inter-Thin.woff?v=3.19") format("woff");
+    }
+
+body{
+    background-color: black;
+    color: white; 
+    height: auto;
+    border: 3px green solid;
+    font-family: inter;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header{
+    display: flex;
+    max-width: 885px;
+    padding-top: 45px;
+    padding-bottom: 41px;
+    border-bottom: 2px solid #545454;
+    margin-left: 199px;
+    margin-bottom: 36.25px;
+}
+
+.header__title{
+    width: 173px;
+    height: 33px;
+    font-size: 50px;
+    font-weight: normal;
+    border: solid 2px blue;
+}
+
+.header__title-side{
+    font-weight: normal;
+    line-height: 2;
+    border: solid 2px coral;
+
+}
+
+.profile{
+    display: flex;
+    margin-left: 199px;
+    margin-right: 199px;
+    border: solid 2px coral;
+    margin-bottom: 46.25px;
+    max-width: 880px;
+}
+
+.profile__image{
+    border-radius: 145px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 168px;
+    height: auto;
+}
+
+.profile__info-name{
+    font-family: inter;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 0;
+}
+
+.profile__info-tag{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+}
+
+.profile__button{
+    border: 1px solid aqua;
+}
+
+.profile__button-edit{
+    width: 24px;
+    height: 24px;
+    border: solid 1px #FFFFFF;
+    background-color: black;
+}
+
+.profile__button-add{
+    width: 150px;
+    height: 50px;
+    border: solid 2px #FFFFFF;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+
+.elements{
+    max-width: 882px;
+    height: auto;
+    border: solid 3px aquamarine;
+    margin-left: 199px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.element{
+    width: 282px;
+    height: 361px;
+    border: solid 2px palevioletred;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.element__image{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.element__name{
+    z-index: 2;
+    color: black;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29.05px;
+    text-align: center;
+}
