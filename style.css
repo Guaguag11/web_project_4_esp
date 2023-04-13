@@ -131,3 +131,14 @@ body{
     line-height: 29.05px;
     text-align: center;
 }
+
+footer{
+    height: 150px;
+}
+
+.footer__name{
+    color: white;
+    padding-top: 70px;
+    font-weight: normal;
+    font-size: 15px;
+}
