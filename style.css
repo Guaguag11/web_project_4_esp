@@ -19,6 +19,7 @@ body{
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    opacity: 100%;
 }
 
 
@@ -78,15 +79,19 @@ body{
     line-height: 21.78px;
 }
 
-.profile__button{
-    border: 1px solid aqua;
-}
 
 .profile__button-edit{
     width: 24px;
     height: 24px;
     border: solid 1px #FFFFFF;
     background-color: black;
+    color: white;
+    opacity: 100%;
+}
+
+.profile__button-edit:hover{
+    cursor: pointer;
+    opacity: 50%;
 }
 
 .profile__button-add{
@@ -96,6 +101,14 @@ body{
     background-color: black;
     color: white;
     font-size: 40px;
+    margin-left: 105px;
+    margin-top: 57px;
+    opacity: 100%;
+}
+
+.profile__button-add:hover{
+    cursor: pointer;
+    opacity: 50%;
 }
 
 .elements{
@@ -116,6 +129,17 @@ body{
     border-radius: 20px;
     z-index: 0;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.element__trash{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+
+.element__trash:hover{
+    cursor: pointer;
 }
 
 .element__image{
@@ -131,6 +155,20 @@ body{
     font-size: 24px;
     line-height: 29.05px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.element__like{
+    border: none;
+    background-color: white;
+    width: 21px;
+    height: 19px;
+}
+
+.element__like:hover{
+    cursor: pointer;
+
 }
 
 footer{
