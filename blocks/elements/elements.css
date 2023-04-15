@@ -1,0 +1,13 @@
+.elements{
+    max-width: 882px;
+    height: auto;
+    border: solid 3px aquamarine;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (min-width: 320px) and (max-width:600px){
+    
+}

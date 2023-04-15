@@ -1,0 +1,15 @@
+.element__like{
+    border: none;
+    background-color: white;
+    width: 21px;
+    height: 19px;
+}
+
+.element__like:hover{
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 320px) and (max-width:600px){
+    
+}

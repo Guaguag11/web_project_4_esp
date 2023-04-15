@@ -1,0 +1,10 @@
+.footer__name{
+    color: white;
+    padding-top: 70px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width:600px){
+    
+}
