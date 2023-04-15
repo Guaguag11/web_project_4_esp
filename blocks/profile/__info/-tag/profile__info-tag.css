@@ -6,5 +6,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width:600px){
-    
+    .profile__info-tag{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 50px;
+        margin: 0;
+    }
 }
