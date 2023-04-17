@@ -1,0 +1,12 @@
+.button{
+opacity: 100%;
+}
+.button:hover{
+    opacity: 40%;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:600px){
+
+}

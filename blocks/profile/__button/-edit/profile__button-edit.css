@@ -4,13 +4,8 @@
     border: solid 1px #FFFFFF;
     background-color: black;
     color: white;
-    opacity: 100%;
 }
 
-.profile__button-edit:hover{
-    cursor: pointer;
-    opacity: 50%;
-}
 
 @media screen and (min-width: 320px) and (max-width:600px){
     .profile__button-edit{

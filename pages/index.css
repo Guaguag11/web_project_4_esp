@@ -41,3 +41,6 @@
 @import url(../blocks/form/__info/form__info.css);
 @import url(../blocks/form/__button/form__button.css);
 
+/* button */
+
+@import url(../blocks/button/button.css);
