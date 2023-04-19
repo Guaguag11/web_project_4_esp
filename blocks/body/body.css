@@ -11,6 +11,8 @@ body{
     align-items: center;
     box-sizing: border-box;
     opacity: 100%;
+    max-width: 1280px;
+    min-width: 320px;
 }
 
 @media screen and (min-width: 320px) and (max-width:600px){
