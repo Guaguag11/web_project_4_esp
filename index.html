@@ -15,10 +15,10 @@
     <div class="profile">
         <img src="images/image.jpg" class="profile__image" alt="fotografía del Jacques Cousteau">
         <div class="profile__info">
-            <h2 class="profile__info-name">Jacques Cousteau 
-            <button class="button profile__button-edit">✎</button></h2>
+            <h2 class="profile__info-name">Jacques Cousteau </h2>
             <h2 class="profile__info-tag">Explorador</h2>
         </div>
+        <button class="button profile__button-edit">✎</button>
             <button class="button profile__button-add">+</button>
     </div>
     <div class="elements">
@@ -56,12 +56,15 @@
     <footer>
         <h2 class="footer__name">© Guagua de Practicum, 2023.</h2>
     </footer>
-    <section class="form">
-        <h2 class="form__name">Nuevo Lugar ╳</h2>
-        <input class="form__info" type="text" name="Título" id="Título" placeholder="Título">
-        <input class="form__info" type="text" name="image" id="imagen" placeholder="Enlace a la imagen">
-        <input class="button form__button" type="submit" value="Crear">
-    </section>
-    <script src="script.js"></script>
+    <div class="content__form">
+        <section class="form">
+            <button class="button form__button-close">╳</button>
+            <h2 class="form__name">Nuevo Lugar</h2>
+            <input class="form__info form__info-name" type="text" name="Título" id="Título" placeholder="Título">
+            <input class="form__info form__info-tag" type="text" name="image" id="imagen" placeholder="Ocupación">
+            <input class="button form__button" type="submit" value="Crear">
+        </section>
+    </div>
+    <script src="form.js"></script>
 </body>
 </html>

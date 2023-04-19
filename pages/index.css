@@ -44,3 +44,6 @@
 /* button */
 
 @import url(../blocks/button/button.css);
+@import url(../blocks/form/__button/-close/form__button-close.css);
+@import url(../blocks/content__form/content__form.css);
+@import url(../blocks/content__form/-visible/content__form-visible.css);
