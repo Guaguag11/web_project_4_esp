@@ -1,4 +1,4 @@
-
+/*
 
 alert('hola!!!!')
 
@@ -7,7 +7,7 @@ let taquitos= 'tu quieres' + ' ' +  numero  + ' ' + 'taquitos';
 
 console.log(taquitos);
 
-
+*/
 
 /* identificar variables */
 
