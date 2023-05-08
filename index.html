@@ -29,7 +29,7 @@
             <img src="images/valle-yosemite.jpg" class="element__image" alt="fotografía del valle de yosemite.">
             <div class="element__info">
                 <h3 class="element__name">Valle de Yosemite</h3>
-                <button class="button element__like"><img src="./images/like.png" alt="icono de like"></button>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
             
         </div>
@@ -38,7 +38,7 @@
             <img src="images/lagoLouise.jpg" class="element__image" alt="fotografía del lago louise con montañas nevadas.">
             <div class="element__info">
                 <h3 class="element__name">Lago Louise</h3>
-                <button class="button element__like"><img src="./images/like.png" alt="icono de like"></button>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
         </div>
         <div class="element">
@@ -46,7 +46,7 @@
             <img src="./images/montanas.jpg" class="element__image" alt="fotografía de un atardecer a traves de las montañas calvas.">
             <div class="element__info">
                 <h3 class="element__name">Montañas Calvas</h3>
-                <button class="button element__like"><img src="./images/like.png" alt="icono de like"></button>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
         </div>
         <div class="element">
@@ -54,7 +54,7 @@
             <img src="./images/grancanon.jpg" class="element__image" alt="fotografía del Gran Cañon.">
             <div class="element__info">
                 <h3 class="element__name">El Gran Cañón</h3>
-                <button class="button element__like"><img src="./images/like.png" alt="icono de like"></button>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
         </div>
         <div class="element">
@@ -62,7 +62,7 @@
             <img src="images/Nevada.jpg" class="element__image" alt="fotografía de las 7 montañas de nevada.">
             <div class="element__info">
                 <h3 class="element__name">Las Vegas, Nevada</h3>
-                <button class="button element__like"><img src="./images/like.png" alt="icono de like"></button>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
         </div>
         <div class="element">
@@ -70,7 +70,7 @@
             <img src="images/arizona.jpg" class="element__image" alt="fotografía de un atardecer en Arizona.">
             <div class="element__info">
                 <h3 class="element__name">Arizona</h3>
-                <button class="button element__like"><img src="./images/like.png" alt="icono de like"></button>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
         </div>
     </div>
@@ -80,12 +80,23 @@
     <div class="modal__form">
         <section class="form">
             <button class="button form__button-close">╳</button>
-            <h2 class="form__name">Nuevo Lugar</h2>
-            <input class="form__info form__info-name" type="text" name="Título" id="Título" placeholder="Título">
-            <input class="form__info form__info-tag" type="text" name="image" id="imagen" placeholder="Ocupación">
+            <h2 class="form__name">Editar perfil</h2>
+            <input class="form__info form__info-name" type="text" name="Título" id="Título" placeholder="Nombre">
+            <input class="form__info form__info-tag" type="text" name="Ocupación" id="Ocupación" placeholder="Ocupación">
             <input class="button form__button" type="submit" value="Crear">
         </section>
     </div>
+    <div class="modal__form-add">
+        <section class="form">
+            <button class="button form__button-add-close">╳</button>
+            <h2 class="form__name">Nuevo Lugar</h2>
+            <input class="form__info form__info-title" type="text" name="Título" id="Título" placeholder="Título">
+            <input class="form__info form__info-url" type="text" name="imagen" id="imagen" placeholder="enlace a la imagen">
+            <input class="button form__button-add" type="submit" value="Crear">
+        </section>
+    </div>
     <script src="form.js"></script>
+    <script src="formadd.js"></script>
+    <script src="like.js"></script>
 </body>
 </html>

@@ -49,3 +49,8 @@
 @import url(../blocks/modal__form/-visible/modal__form-visible.css);
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/elements/element/__info/element__info.css);
+
+@import url(../blocks/modal__form-add/modal__form-add.css);
+@import url(../blocks/modal__form-add/-visible/modal__form-add-visible.css);
+@import url(../blocks/form/__button/-add/form__button-add.css);
+@import url(../blocks/form/__button/-add/-close/form__button-add-close.css);

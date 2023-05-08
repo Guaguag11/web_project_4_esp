@@ -1,0 +1,11 @@
+.form__button-add-close{
+    background-color: rgba(0, 0, 0, 0);
+    height: 40px;
+    width: 40px;
+    border: none;
+    position: absolute;
+    top: -40px;
+    color: white;
+    right: -25px;
+
+}

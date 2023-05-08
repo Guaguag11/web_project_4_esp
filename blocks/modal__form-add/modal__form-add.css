@@ -1,0 +1,12 @@
+.modal__form-add{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+    transition: all 0.5s;
+    opacity: 0;
+}
