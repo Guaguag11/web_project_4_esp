@@ -1,0 +1,4 @@
+.element__like-active-visible{
+    visibility: visible;
+    transition: all .5s;
+}
