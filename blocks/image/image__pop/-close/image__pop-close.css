@@ -1,0 +1,14 @@
+.image__pop-close{
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 50px;
+    border: none;
+    position: absolute;
+    top: -53px;
+    color: white;
+    right: -25px;
+    font-weight: bolder;
+    font-size: 20px;
+
+
+}
