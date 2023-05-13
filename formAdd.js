@@ -14,8 +14,7 @@ let formUrl = document.querySelector(".SOS");
 
 addButton.addEventListener("click", function(){
     formAdd.classList.toggle("modal__form-add-visible");
-    formTitle.value = pageTitle.textContent;
-    formUrl.value = link.textContent;
+
 });
 
 closeAddButton.addEventListener("click", function(){
