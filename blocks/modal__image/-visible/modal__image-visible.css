@@ -1,4 +1,4 @@
-.image__pop-up{
+.modal__image-visible{
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.85);
     opacity: 1;

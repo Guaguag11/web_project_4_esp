@@ -5,6 +5,13 @@
     font-weight: normal;
 }
 
+
+@media screen and (min-width: 600px) and (max-width:900px){
+    .header__title{
+        padding-left: 29px;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width:600px){
     
 }

@@ -15,9 +15,10 @@
 @media screen and (min-width: 320px) and (max-width:600px){
     
     .profile__image{
-    height: 170px;
-    padding-top: 7px;
-    margin-left: 10px;
-    margin-right: 0;
+        height: 233px;
+        width: 233px;
+        padding-top: 7px;
+        margin-left: 10px;
+        margin-right: 0;
     }
 }

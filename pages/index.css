@@ -54,11 +54,14 @@
 @import url(../blocks/modal__form-add/-visible/modal__form-add-visible.css);
 @import url(../blocks/form/__button/-add/form__button-add.css);
 @import url(../blocks/form/__button/-add/-close/form__button-add-close.css);
+
+
 @import url(../blocks/elements/element/__like/-active/element__like-active.css);
 @import url(../blocks/elements/element/__like/-active/-visible/element__like-active-visible.css);
 
 
+@import url(../blocks/modal__image/modal__image.css);
+@import url(../blocks/modal__image/-visible/modal__image-visible.css);
 @import url(../blocks/image/image.css);
 @import url(../blocks/image/image__pop/image__pop.css);
-@import url(../blocks/image/image__pop/-up/image__pop-up.css);
 @import url(../blocks/image/image__pop/-close/image__pop-close.css);

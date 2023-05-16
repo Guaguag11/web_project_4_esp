@@ -10,6 +10,8 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 50px;
-        margin: 0;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
     }
 }
