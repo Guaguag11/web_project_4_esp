@@ -65,3 +65,7 @@
 @import url(../blocks/image/image.css);
 @import url(../blocks/image/image__pop/image__pop.css);
 @import url(../blocks/image/image__pop/-close/image__pop-close.css);
+
+@import url(../blocks/modal__element/modal__element.css);
+@import url(../blocks/elements/element/__image/-modal/element__image-modal.css);
+@import url(../blocks/elements/element/__name/-modal/element__name-modal.css);
