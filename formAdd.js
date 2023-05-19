@@ -5,12 +5,14 @@ let closeAddButton = document.querySelector(".form__button-add-close");
 
 let formAdd = document.querySelector(".modal__form-add");
 
-let pageTitle = document.querySelector(".profile__info-title");
-let link = document.querySelector(".profile__info-url");
+let title = document.querySelector(".form__info-title");
+let link = document.querySelector(".form__info-url");
+
 let formTitle = document.querySelector(".element__name-modal");
 let formUrl = document.querySelector(".element__image-modal");
 
 
+const node = document.querySelector(".modal__element");
 
 /*SOS YA NO SE QUE HACER AQUI*/
 
@@ -24,16 +26,18 @@ closeAddButton.addEventListener("click", function(){
 
 saveAddButton.addEventListener("click", function(){
     formAdd.classList.toggle("modal__form-add-visible");
-    /* pageTitle.value = formTitle.textContent;
-    link.value = formUrl.textContent; */
-    console.log("se hizo click");
+    title.textContent = formTitle.value;
+    link.textContent = formUrl.value;
+    console.log("se quiso añadir algo");
+
 
 })
 
 /*
-
 esto tengo que poner para que se agregue la url de los elements
 document.querySelector src
 
-Elements.openchild y el elemento nuevo 
+documento de appen child
+Elements.appenchild y el elemento nuevo 
 */
+

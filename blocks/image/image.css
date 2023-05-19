@@ -6,7 +6,6 @@
     height: 540px;
     z-index: 3;
     position: fixed;
-    transition: all 0.5s;
     margin-top: 80px;
     border: red 3px solid;
     }
