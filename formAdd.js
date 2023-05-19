@@ -14,6 +14,8 @@ let formUrl = document.querySelector(".element__image-modal");
 
 const node = document.querySelector(".modal__element");
 
+let elements = document.querySelector(".elements")
+
 /*SOS YA NO SE QUE HACER AQUI*/
 
 addButton.addEventListener("click", function(){
@@ -26,10 +28,21 @@ closeAddButton.addEventListener("click", function(){
 
 saveAddButton.addEventListener("click", function(){
     formAdd.classList.toggle("modal__form-add-visible");
-    title.textContent = formTitle.value;
-    link.textContent = formUrl.value;
     console.log("se quiso añadir algo");
 
+    title.textContent = formTitle.value;
+    link.textContent = formUrl.value;
+
+    elements.appendChild(node);
+});
+
+/*dudas
+primero tengo que guardar para que se aparezca lo que escribi en el form
+al mismo tiempo tengo que hacer que mi element nuevo sea visible con la nueva info
+y que se recorran los demás
+
+una cosa es que se haga visible el form
+la otra cosa es que se haga visible mi element nuevo
 
 })
 
@@ -39,5 +52,4 @@ document.querySelector src
 
 documento de appen child
 Elements.appenchild y el elemento nuevo 
-*/
-
+*/ 
