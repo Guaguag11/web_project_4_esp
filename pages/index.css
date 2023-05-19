@@ -1,7 +1,8 @@
 @import url(../pages/normalize.css);
 @import url(../blocks/page.css);
 @import url(../blocks/body/body.css);
-@import url(../Inter\ Web/Inter);
+@import url(../inter-web/inter.css);
+
 
 
 /* header*/ 

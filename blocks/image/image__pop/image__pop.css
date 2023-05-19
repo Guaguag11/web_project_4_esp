@@ -6,6 +6,12 @@
     }
 
 @media screen and (min-width: 320px) and (max-width:600px){
-
+    .image__pop{
+        max-width: 240px;
+        max-height: 299px;
+        width: 250px;
+        height: 299px;
+        }
+    
 }
     

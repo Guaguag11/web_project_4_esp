@@ -9,6 +9,7 @@ openPic.forEach(function (element, i) {
     modalImage[0].classList.toggle("modal__image-visible");
     let img = modalImage[0].querySelector(".image__pop");
     img.src = element.src;
+    
     console.log("se hizo click");
     });
 });
