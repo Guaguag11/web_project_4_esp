@@ -29,7 +29,7 @@
 /* footer */
 
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__name/footer__name.css);
+@import url(../blocks/footer/--name/footer--name.css);
 
 /* form */
 
