@@ -12,7 +12,6 @@ const node = document.querySelector(".element");
 
 let elements = document.querySelector(".elements");
 
-/*SOS YA NO SE QUE HACER AQUI*/
 
 addButton.addEventListener("click", function () {
     formAdd.classList.toggle("modal__form-add-visible");

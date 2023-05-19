@@ -6,8 +6,7 @@
     height: 540px;
     z-index: 3;
     position: fixed;
-    margin-top: 80px;
-    border: red 3px solid;
+    margin-top: 19px;
     }
 
     @media screen and (min-width: 320px) and (max-width:600px){
