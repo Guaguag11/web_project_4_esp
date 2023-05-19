@@ -19,7 +19,7 @@
 
 @media screen and (min-width: 320px) and (max-width:600px){
     .form__button-add{
-        width: 226px;;
+        width: 226px;
         height: 46px;
         margin-left: 23px;
     }

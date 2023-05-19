@@ -3,7 +3,7 @@
     height: 330px;
     background-color: white;
     display: flex;
-    flex-direction:column ;
+    flex-direction:column;
     justify-content: space-around;
     border-radius: 12px;
     position: relative;
