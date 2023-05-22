@@ -42,10 +42,7 @@
 
 @import url(../blocks/button/button.css);
 @import url(../blocks/form/__button/-close/form__button-close.css);
-/*
-@import url(../blocks/modal__form/modal__form.css);
-@import url(../blocks/modal__form/-visible/modal__form-visible.css);
-*/
+
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/elements/element/__info/element__info.css);
 
@@ -58,7 +55,6 @@
 @import url(../blocks/elements/element/__like/-active/-visible/element__like-active-visible.css);
 
 
-@import url(../blocks/modal__element/modal__element.css);
 @import url(../blocks/elements/element/__image/-modal/element__image-modal.css);
 @import url(../blocks/elements/element/__name/-modal/element__name-modal.css);
 
