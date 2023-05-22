@@ -7,7 +7,6 @@ let formAdd = document.querySelector(".add");
 let title = document.querySelector(".form__info-title");
 let link = document.querySelector(".form__info-url");
 
-
 const node = document.querySelector(".element");
 
 let elements = document.querySelector(".elements");
@@ -34,5 +33,3 @@ saveAddButton.addEventListener("click", function () {
 
     elements.insertBefore(nodeClonado, elements.firstChild);
 });
-
-
