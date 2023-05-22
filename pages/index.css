@@ -56,13 +56,20 @@
 @import url(../blocks/elements/element/__like/-active/element__like-active.css);
 @import url(../blocks/elements/element/__like/-active/-visible/element__like-active-visible.css);
 
-
+/*
 @import url(../blocks/modal__image/modal__image.css);
 @import url(../blocks/modal__image/-visible/modal__image-visible.css);
 @import url(../blocks/image/image.css);
 @import url(../blocks/image/image__pop/image__pop.css);
 @import url(../blocks/image/image__pop/-close/image__pop-close.css);
+*/
 
 @import url(../blocks/modal__element/modal__element.css);
 @import url(../blocks/elements/element/__image/-modal/element__image-modal.css);
 @import url(../blocks/elements/element/__name/-modal/element__name-modal.css);
+
+@import url(../blocks/image/image.css);
+@import url(../blocks/image/-visible/image__visible.css);
+@import url(../blocks/image/__pop/image__pop.css);
+@import url(../blocks/image/__pop/-up/image__pop-up.css);
+@import url(../blocks/image/__pop/-close/image__pop-close.css);
