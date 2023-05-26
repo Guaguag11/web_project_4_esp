@@ -23,19 +23,9 @@
             <button class="button profile__button-add">+</button>
         </div>
     </div>
-    <div class="elements">
-        <div class="element">
-            <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
-            <img src="images/yosemite.jpg" class="element__image" alt="fotografía del valle de yosemite.">
-            <div class="element__info">
-                <h3 class="element__name">Valle de Yosemite</h3>
-                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
-            </div>
-                <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
-        </div>
-
-
-        <div class="element">
+    <ul class="elements">
+        <!---
+        <li class="element">
             <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
             <img src="images/lagoLouise.jpg" class="element__image" alt="fotografía del lago louise con montañas nevadas.">
             <div class="element__info">
@@ -43,10 +33,10 @@
                 <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
                 <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
-        </div>
+        </li>
 
 
-        <div class="element">
+        <li class="element">
             <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
             <img src="./images/montañas.jpg" class="element__image" alt="fotografía de un atardecer a traves de las montañas calvas.">
             <div class="element__info">
@@ -54,10 +44,10 @@
                 <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
                 <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
-        </div>
+        </li>
 
 
-        <div class="element">
+        <li class="element">
             <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
             <img src="./images/grancanon.jpg" class="element__image" alt="fotografía del Gran Cañon.">
             <div class="element__info">
@@ -65,10 +55,10 @@
                 <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
                 <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
-        </div>
+        </li>
 
 
-        <div class="element">
+        <li class="element">
             <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
             <img src="images/Nevada.jpg" class="element__image" alt="fotografía de las 7 montañas de nevada.">
             <div class="element__info">
@@ -76,11 +66,11 @@
                 <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
                 <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
-        </div>
+        </li>
 
 
         
-        <div class="element">
+        <li class="element">
             <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
             <img src="images/arizona.jpg" class="element__image" alt="fotografía de un atardecer en Arizona.">
             <div class="element__info">
@@ -88,11 +78,11 @@
                 <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
             </div>
                 <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
-        </div>
-        
-    </div>
+        </li>
+    -->
+</ul>
     <footer class="footer">
-        <h2 class="footer__name">© Guagua de Practicum, 2023.</h2>
+        <h4 class="footer__name">© Guagua de Practicum, 2023.</h4>
     </footer>
 
     <div class="edit">
@@ -116,11 +106,23 @@
     <div class="image">
         <section class="image__pop">
             <button class="button image__pop-close">╳</button>
-            <img src=" " class="image__pop-up">
+            <img src=" " class="image__pop-up" alt="imagen agrandada">
             <h4 class="image__name"> </h4>
         </section>
     </div>
     
+    <template class="template">
+        <li class="element">
+            <div class="button element__trash"><img src="./images/Trash.png" alt="icono de basurero"></div>
+            <img src=" " class="element__image" alt="fotografía del valle de yosemite.">
+            <div class="element__info">
+                <h3 class="element__name"> </h3>
+                <button class="button element__like"><img src="./images/dislike.png" alt="icono de like"></button>
+            </div>
+                <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
+        </li>
+    </template>
+    <script src="card.js"></script> 
     <script src="form.js"></script>
     <script src="formadd.js"></script>
     <script src="like.js"></script>

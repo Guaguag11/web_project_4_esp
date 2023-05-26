@@ -32,4 +32,16 @@ saveAddButton.addEventListener("click", function () {
     formLink.src = link.value
 
     elements.insertBefore(nodeClonado, elements.firstChild);
+
+    let formButtonLike = nodeClonado.querySelector(".element__like");
+    let formTrash = nodeClonado.querySelector(".element__trash");
+    let formLike = nodeClonado.querySelector(".element__like-active");
+
+    formButtonLike.addEventListener("click", function () {
+        formLike.classList.toggle("element__like-active-visible");
+    });
+    
+    formTrash.addEventListener("click", function () {
+    nodeClonado.remove();
+    });
 });
