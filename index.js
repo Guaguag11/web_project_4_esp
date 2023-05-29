@@ -69,15 +69,16 @@ saveAddButton.addEventListener("click", function () {
     let formButtonLike = nodeClonado.querySelector(".element__like");
     let formTrash = nodeClonado.querySelector(".element__trash");
     let formLike = nodeClonado.querySelector(".element__like-active");
+    let formPop = nodeClonado.querySelector(".element__image");
+    let imagen = nodeClonado.querySelector(".image");
 
     formButtonLike.addEventListener("click", function () {
         formLike.classList.toggle("element__like-active-visible");
     });
-    
     formTrash.addEventListener("click", function () {
     nodeClonado.remove();
 
-    let nodePop = nodeClonado.querySelector(".element__image");
+
 
 })});
 
@@ -115,7 +116,6 @@ let closePic = document.querySelector(".image__pop-close");
 let modalImage = document.querySelectorAll(".image");
 let elementName = document.querySelector(".element");
 
-
 openPic.forEach(function (element, i) {
     console.log(element); 
     element.addEventListener("click", function () {
@@ -123,8 +123,8 @@ openPic.forEach(function (element, i) {
 
     let img = modalImage[0].querySelector(".image__pop-up");
     img.src = element.src;
-
     });
+
 });
 
 /* aqui solo agarra el nombre del primer elemento */
