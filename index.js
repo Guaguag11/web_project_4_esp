@@ -1,15 +1,39 @@
 
 
-let editButton = document.querySelector(".profile__button-edit");
-let saveButton = document.querySelector(".form__button");
-let closeButton = document.querySelector(".form__button-close");
+const editButton = document.querySelector(".profile__button-edit");
+const saveButton = document.querySelector(".form__button");
+const closeButton = document.querySelector(".form__button-close");
 
-let form = document.querySelector(".edit");
+const form = document.querySelector(".edit");
 
-let pageName = document.querySelector(".profile__info-name");
-let profession = document.querySelector(".profile__info-tag");
-let formName = document.querySelector(".form__info-name");
-let formTag = document.querySelector(".form__info-tag");
+const pageName = document.querySelector(".profile__info-name");
+const profession = document.querySelector(".profile__info-tag");
+const formName = document.querySelector(".form__info-name");
+const formTag = document.querySelector(".form__info-tag");
+
+const addButton = document.querySelector(".profile__button-add");
+const saveAddButton = document.querySelector(".form__button-add");
+const closeAddButton = document.querySelector(".form__button-add-close");
+
+const formAdd = document.querySelector(".add");
+
+const title = document.querySelector(".form__info-title");
+const link = document.querySelector(".form__info-url");
+
+const node = document.querySelector(".element");
+const elements = document.querySelector(".elements");
+
+const likeButton = document.querySelectorAll(".element__like");
+const like = document.querySelectorAll(".element__like-active");
+
+const deleteButton = document.querySelectorAll(".element__trash");
+const card = document.querySelectorAll(".element");
+
+const openPic = document.querySelectorAll(".element__image");
+const closePic = document.querySelector(".image__pop-close");
+
+const modalImage = document.querySelectorAll(".image");
+const elementName = document.querySelector(".element");
 
 
 
@@ -30,21 +54,6 @@ saveButton.addEventListener("click", function(){
 })
 
 /*FORM ADD */
-
-let addButton = document.querySelector(".profile__button-add");
-let saveAddButton = document.querySelector(".form__button-add");
-let closeAddButton = document.querySelector(".form__button-add-close");
-
-let formAdd = document.querySelector(".add");
-
-let title = document.querySelector(".form__info-title");
-let link = document.querySelector(".form__info-url");
-
-const node = document.querySelector(".element");
-
-let elements = document.querySelector(".elements");
-
-
 addButton.addEventListener("click", function () {
     formAdd.classList.toggle("add-visible");
 });
@@ -54,80 +63,57 @@ closeAddButton.addEventListener("click", function () {
 });
 
 saveAddButton.addEventListener("click", function () {
-    let nodeClonado = node.cloneNode(true);
+    const nodeClonado = node.cloneNode(true);
 
     formAdd.classList.toggle("add-visible");
 
-    let formTitle = nodeClonado.querySelector(".element__name");
-    let formLink = nodeClonado.querySelector(".element__image");
+    const formTitle = nodeClonado.querySelector(".element__name");
+    const formLink = nodeClonado.querySelector(".element__image");
 //   TEXT CONTENT EL VALOR PARA ETIQUETAS DE TEXTO , VALUE PARA EL CONTENIDO DE INPUT
     formTitle.textContent =title.value
     formLink.src = link.value
 
     elements.insertBefore(nodeClonado, elements.firstChild);
 
-    let formButtonLike = nodeClonado.querySelector(".element__like");
-    let formTrash = nodeClonado.querySelector(".element__trash");
-    let formLike = nodeClonado.querySelector(".element__like-active");
-    let formPop = nodeClonado.querySelector(".element__image");
-    let imagen = nodeClonado.querySelector(".image");
+    const formButtonLike = nodeClonado.querySelector(".element__like");
+    const formTrash = nodeClonado.querySelector(".element__trash");
+    const formLike = nodeClonado.querySelector(".element__like-active");
+    const formPop = nodeClonado.querySelector(".element__image");
+    const imagen = nodeClonado.querySelector(".image");
 
     formButtonLike.addEventListener("click", function () {
         formLike.classList.toggle("element__like-active-visible");
     });
     formTrash.addEventListener("click", function () {
     nodeClonado.remove();
-
-
-
 })});
 
 
 /* LIKE */
-
-let likeButton = document.querySelectorAll(".element__like");
-let like = document.querySelectorAll(".element__like-active");
-
 likeButton.forEach(function(element, i){
     element.addEventListener("click", function () {
     like[i].classList.toggle("element__like-active-visible");
 });
 });
 
-
 /* TRASH */
-
-
-let deleteButton = document.querySelectorAll(".element__trash");
-let card = document.querySelectorAll(".element");
-
 deleteButton.forEach(function(element, i){
     element.addEventListener("click", function () {
     card[i].remove();
 });
 });
 
-
 /* IMAGE POP */
-
-let openPic = document.querySelectorAll(".element__image");
-let closePic = document.querySelector(".image__pop-close");
-
-let modalImage = document.querySelectorAll(".image");
-let elementName = document.querySelector(".element");
-
 openPic.forEach(function (element, i) {
     console.log(element); 
     element.addEventListener("click", function () {
     modalImage[0].classList.toggle("image__visible");
 
-    let img = modalImage[0].querySelector(".image__pop-up");
+    const img = modalImage[0].querySelector(".image__pop-up");
     img.src = element.src;
     });
 
 });
-
-/* aqui solo agarra el nombre del primer elemento */
 
 closePic.addEventListener("click", function () {
     modalImage[0].classList.toggle("image__visible");
