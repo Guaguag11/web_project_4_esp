@@ -1,5 +1,3 @@
-
-
 const editButton = document.querySelector(".profile__button-edit");
 const saveButton = document.querySelector(".form__button");
 const closeButton = document.querySelector(".form__button-close");
@@ -27,14 +25,21 @@ const likeButton = document.querySelectorAll(".element__like");
 const like = document.querySelectorAll(".element__like-active");
 
 const deleteButton = document.querySelectorAll(".element__trash");
-const card = document.querySelectorAll(".element");
 
+const card = document.querySelectorAll(".element");
 const openPic = document.querySelectorAll(".element__image");
+const trueName = document.querySelectorAll(".element__name");
+
 const closePic = document.querySelector(".image__pop-close");
 
-const modalImage = document.querySelectorAll(".image");
+const modalImage = document.querySelector(".image");
 const elementName = document.querySelector(".element");
 
+const imageName = document.querySelector(".image__name");
+
+
+
+const img = modalImage.querySelector(".image__pop-up");
 
 
 editButton.addEventListener("click", function(){
@@ -79,14 +84,22 @@ saveAddButton.addEventListener("click", function () {
     const formTrash = nodeClonado.querySelector(".element__trash");
     const formLike = nodeClonado.querySelector(".element__like-active");
     const formPop = nodeClonado.querySelector(".element__image");
-    const imagen = nodeClonado.querySelector(".image");
+    const formName = nodeClonado.querySelector(".element__name");
 
     formButtonLike.addEventListener("click", function () {
         formLike.classList.toggle("element__like-active-visible");
     });
     formTrash.addEventListener("click", function () {
     nodeClonado.remove();
-})});
+})
+
+formPop.addEventListener("click", function () {
+    modalImage.classList.toggle("image__visible");
+    img.src = formPop.src;
+    imageName.textContent = formName.textContent;
+});
+});
+
 
 
 /* LIKE */
@@ -104,18 +117,20 @@ deleteButton.forEach(function(element, i){
 });
 
 /* IMAGE POP */
+
 openPic.forEach(function (element, i) {
     console.log(element); 
     element.addEventListener("click", function () {
-    modalImage[0].classList.toggle("image__visible");
+    modalImage.classList.toggle("image__visible");
 
-    const img = modalImage[0].querySelector(".image__pop-up");
     img.src = element.src;
+    imageName.textContent = trueName[i].textContent;
+    console.log("se abrió ventana");
     });
 
 });
 
 closePic.addEventListener("click", function () {
-    modalImage[0].classList.toggle("image__visible");
+    modalImage.classList.toggle("image__visible");
     console.log("se cerro la ventana");
 });

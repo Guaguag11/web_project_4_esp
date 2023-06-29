@@ -69,3 +69,9 @@
 @import url(../blocks/edit/edit.css);
 @import url(../blocks/edit/-visible/edit-visible.css);
 @import url(../blocks/image/__name/image__name.css);
+
+@import url(../blocks/input/input.css);
+@import url(../blocks/input/__error/input__error.css);
+@import url(../blocks/input/__error/-active/input__error-active.css);
+
+@import url(../blocks/form/__button/_inactive/form__button_inactive.css);
