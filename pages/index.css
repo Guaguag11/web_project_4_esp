@@ -79,3 +79,5 @@
 @import url(../blocks/form/__info/form__info.css);
 @import url(../blocks/form/__info/-name/form__info-name.css);
 
+@import url(../blocks/form/__input/-error/-link/form__input-error-link.css);
+@import url(../blocks/form/__input/-error/-title/form__input-error-title.css);

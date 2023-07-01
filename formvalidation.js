@@ -36,9 +36,9 @@ secondInputEdit.addEventListener("input", function(){
 });
 
 const firstInputAdd = formularios[1].querySelector(".form__info-title");
-const firstSpanAdd = formularios[1].querySelector(".error__info-title");
+const firstSpanAdd = formularios[1].querySelector(".form__input-error-title");
 const secondInputAdd = formularios[1].querySelector(".form__info-url");
-const secondSpanAdd = formularios[1].querySelector(".error__info-link");
+const secondSpanAdd = formularios[1].querySelector(".form__input-error-link");
 const buttonAdd = formularios[1].querySelector(".form__button-add");
 
 

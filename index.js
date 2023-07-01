@@ -37,8 +37,6 @@ const elementName = document.querySelector(".element");
 
 const imageName = document.querySelector(".image__name");
 
-
-
 const img = modalImage.querySelector(".image__pop-up");
 
 
