@@ -2,7 +2,7 @@ const editButton = document.querySelector(".profile__button-edit");
 const saveButton = document.querySelector(".form__button");
 const closeButton = document.querySelector(".form__button-close");
 
-const form = document.querySelector(".edit");
+const formEdit = document.querySelector(".edit");
 
 const pageName = document.querySelector(".profile__info-name");
 const profession = document.querySelector(".profile__info-tag");
@@ -41,19 +41,23 @@ const img = modalImage.querySelector(".image__pop-up");
 
 
 editButton.addEventListener("click", function(){
-    form.classList.toggle("edit-visible");
+    console.log("se abrio edit");
+    formEdit.classList.toggle("edit-visible");
     formName.value = pageName.textContent;
     formTag.value = profession.textContent;
 });
 
-closeButton.addEventListener("click", function(){
-    form.classList.toggle("edit-visible");
+closeButton.addEventListener("click", function(evt){
+    formEdit.classList.toggle("edit-visible");
+    console.log("se cerró la ventana");
+    evt.preventDefault();
 });
 
-saveButton.addEventListener("click", function(){
-    form.classList.toggle("edit-visible");
+saveButton.addEventListener("click", function(evt){
+    formEdit.classList.toggle("edit-visible");
     pageName.textContent = formName.value;
     profession.textContent = formTag.value;
+    evt.preventDefault();
 })
 
 /*FORM ADD */
@@ -61,14 +65,16 @@ addButton.addEventListener("click", function () {
     formAdd.classList.toggle("add-visible");
 });
 
-closeAddButton.addEventListener("click", function () {
+closeAddButton.addEventListener("click", function (evt) {
     formAdd.classList.toggle("add-visible");
+    evt.preventDefault();
 });
 
-saveAddButton.addEventListener("click", function () {
+saveAddButton.addEventListener("click", function (evt) {
     const nodeClonado = node.cloneNode(true);
-
+    console.log("se hizo click");
     formAdd.classList.toggle("add-visible");
+    evt.preventDefault();
 
     const formTitle = nodeClonado.querySelector(".element__name");
     const formLink = nodeClonado.querySelector(".element__image");
@@ -98,6 +104,18 @@ formPop.addEventListener("click", function () {
 });
 });
 
+/*cerrar con escape */
+
+document.addEventListener("keydown", function (evt){
+    if(evt.key === "Escape" && formEdit.classList.contains("edit-visible") ){
+        formEdit.classList.remove("edit-visible");
+    } else if(evt.key === "Escape" && formAdd.classList.contains("add-visible")){
+        formAdd.classList.remove("add-visible");
+        console.log("se presiono esc");
+    } else if(evt.key === "Escape" && modalImage.classList.contains("image__visible")){
+        modalImage.classList.remove("image__visible");
+    }
+});
 
 
 /* LIKE */
@@ -117,7 +135,6 @@ deleteButton.forEach(function(element, i){
 /* IMAGE POP */
 
 openPic.forEach(function (element, i) {
-    console.log(element); 
     element.addEventListener("click", function () {
     modalImage.classList.toggle("image__visible");
 
@@ -131,4 +148,25 @@ openPic.forEach(function (element, i) {
 closePic.addEventListener("click", function () {
     modalImage.classList.toggle("image__visible");
     console.log("se cerro la ventana");
+});
+
+
+/*quitar con click fuera de imagen o form */
+
+modalImage.addEventListener("click", function (evt) {
+    if (evt.target === modalImage ){
+        modalImage.classList.toggle("image__visible");
+    }
+});
+
+formAdd.addEventListener("click", function (evt) {
+    if (evt.target === formAdd ){
+        formAdd.classList.toggle("add-visible");
+    }
+});
+
+formEdit.addEventListener("click", function (evt) {
+    if (evt.target === formEdit ){
+        formEdit.classList.toggle("edit-visible");
+    }
 });

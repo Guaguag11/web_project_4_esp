@@ -39,6 +39,7 @@ let imagenD = templateClonado.querySelector(".element__image");
 
 nameD.textContent = element.name; 
 imagenD.setAttribute("src", "" + element.link); 
+imagenD.setAttribute("alt", "imagen representativa de " + element.name);
 
 cardContent.append(templateClonado);
 

@@ -5,6 +5,7 @@ const secondInputEdit = formularios[0].querySelector(".form__info-tag");
 const secondSpanEdit = formularios[0].querySelector(".form__input-error-tag");
 const buttonEdit = formularios[0].querySelector(".form__button");
 
+
 firstInputEdit.addEventListener("input", function(){
     if (!firstInputEdit.validity.valid) {
         buttonEdit.classList.add("form__button_inactive");
