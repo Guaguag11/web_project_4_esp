@@ -1,3 +1,4 @@
+
 const editButton = document.querySelector(".profile__button-edit");
 const saveButton = document.querySelector(".form__button");
 const closeButton = document.querySelector(".form__button-close");
@@ -60,7 +61,7 @@ saveButton.addEventListener("click", function(evt){
     evt.preventDefault();
 })
 
-/*FORM ADD */
+/*FORM ADD */  
 addButton.addEventListener("click", function () {
     formAdd.classList.toggle("add-visible");
 });
@@ -105,7 +106,6 @@ formPop.addEventListener("click", function () {
 });
 
 /*cerrar con escape */
-
 document.addEventListener("keydown", function (evt){
     if(evt.key === "Escape" && formEdit.classList.contains("edit-visible") ){
         formEdit.classList.remove("edit-visible");
@@ -117,33 +117,6 @@ document.addEventListener("keydown", function (evt){
     }
 });
 
-
-/* LIKE */
-likeButton.forEach(function(element, i){
-    element.addEventListener("click", function () {
-    like[i].classList.toggle("element__like-active-visible");
-});
-});
-
-/* TRASH */
-deleteButton.forEach(function(element, i){
-    element.addEventListener("click", function () {
-    card[i].remove();
-});
-});
-
-/* IMAGE POP */
-
-openPic.forEach(function (element, i) {
-    element.addEventListener("click", function () {
-    modalImage.classList.toggle("image__visible");
-
-    img.src = element.src;
-    imageName.textContent = trueName[i].textContent;
-    console.log("se abrió ventana");
-    });
-
-});
 
 closePic.addEventListener("click", function () {
     modalImage.classList.toggle("image__visible");
@@ -170,3 +143,4 @@ formEdit.addEventListener("click", function (evt) {
         formEdit.classList.toggle("edit-visible");
     }
 });
+
