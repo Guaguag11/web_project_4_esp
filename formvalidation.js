@@ -1,4 +1,4 @@
-
+/*
 const formularios = document.querySelectorAll(".form");
 const firstInputEdit = formularios[0].querySelector(".form__info-name");
 const firstSpanEdit = formularios[0].querySelector(".form__input-error-name");
@@ -119,7 +119,7 @@ Tiene métodos privados para procesar el formulario, que incluyen: comprobar la 
 cambiar el estado del botón Submit, y agregar todos los controladores necesarios.
 Tiene un método público enableValidation(), que activa la validación del formulario.
 Crea una instancia de la clase FormValidator para cada formulario que deba ser validado.
-
+*/
 
 class FormularioEdit {
     constructor(form) {
@@ -127,17 +127,17 @@ class FormularioEdit {
     this._firstInputEdit = form.querySelector(".form__info-name");
     this._firstSpanEdit = form.querySelector(".form__input-error-name");
     this._secondInputEdit = form.querySelector(".form__info-tag");
-    this._secondSpandEdit = form.querySelector(".form__input-error-tag");
+    this._secondSpanEdit = form.querySelector(".form__input-error-tag");
     this._buttonEdit = form.querySelector(".form__button");
     
     this._primero = false;
     this._segundo = false;
     
-    this._SetEventListeners();
+    this._setEventListeners();
 }
 
 _valido(){
-    if ((primero == true || segundo == true)|| (primero == true && segundo == true)){
+    if ((this._primero == true || this._segundo == true)|| (this._primero == true && this._segundo == true)){
         this._buttonEdit.classList.add("form__button_inactive");
         this._buttonEdit.disabled =true;
     }
@@ -148,31 +148,31 @@ _valido(){
     }
 }
 
-_SetEventListeners(){
-this.firstInput.addEventListener("input", () => {
-    if (!this.firstInput.validity.valid) {
-        this.firstSpan.classList.add("form__input-error-active");
-        this.firstSpan.textContent = this.firstInput.validationMessage;
-        this.primero = true;
+_setEventListeners(){
+this._firstInputEdit.addEventListener("input", () => {
+    if (!this._firstInputEdit.validity.valid) {
+        this._firstSpanEdit.classList.add("form__input-error-active");
+        this._firstSpanEdit.textContent = this._firstInputEdit.validationMessage;
+        this._primero = true;
     } else {
-        this.firstSpan.classList.remove("form__input-error-active");
-        this.firstSpan.textContent = " ";
-        this.primero = false;
+        this._firstSpanEdit.classList.remove("form__input-error-active");
+        this._firstSpanEdit.textContent = " ";
+        this._primero = false;
         }
-        this.valido();
+        this._valido();
     });
     
-    this.secondInput.addEventListener("input", () => {
-    if (!this.secondInput.validity.valid) {
-        this.secondSpan.classList.add("form__input-error-active");
-        this.secondSpan.textContent = this.secondInput.validationMessage;
-        this.segundo = true;
+    this._secondInputEdit.addEventListener("input", () => {
+    if (!this._secondInputEdit.validity.valid) {
+        this._secondSpanEdit.classList.add("form__input-error-active");
+        this._secondSpanEdit.textContent = this._secondInputEdit.validationMessage;
+        this._segundo = true;
     } else {
-        this.secondSpan.classList.remove("form__input-error-active");
-        this.secondSpan.textContent = " ";
-        this.segundo = false;
+        this._secondSpanEdit.classList.remove("form__input-error-active");
+        this._secondSpanEdit.textContent = " ";
+        this._segundo = false;
         }
-        this.valido();
+        this._valido();
     });
     }
 };
@@ -180,4 +180,3 @@ this.firstInput.addEventListener("input", () => {
 const formularios = document.querySelectorAll(".form");
 const formularioEdit = new FormularioEdit(formularios[0]);
 
-*/
