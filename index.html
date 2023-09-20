@@ -29,7 +29,7 @@
         <h4 class="footer__name">© Guagua de Practicum, 2023.</h4>
     </footer>
     <div class="edit">
-        <form class="form" novalidate>
+        <form class="form form-edit" novalidate>
             <button class="button form__button-close">╳</button>
             <h2 class="form__name">Editar perfil</h2>
             <input class="form__info form__info-name" type="text" name="nombre" id="nombre" placeholder="Nombre" required
@@ -44,7 +44,7 @@
         </form>
     </div>
     <div class="add">
-        <form class="form" novalidate>
+        <form class="form form-add" novalidate>
             <button class="button form__button-add-close" type="button">╳</button>
             <h2 class="form__name">Nuevo Lugar</h2>
             <input class="form__info form__info-title" type="text" name="Título" id="Título" placeholder="Título" required
@@ -75,9 +75,9 @@
                 <img class="button element__like-active" src="./images/like.png" alt="icono de like activado">
         </li>
     </template>
-    <script src="card.js"></script> 
-    <script src="index.js"></script>
-    <script src="formvalidation.js"></script>
-    <script src="utils.js"></script> 
+    <script type="module" src="index.js"></script>
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="card.js"></script> 
+    <script type="module" src="formvalidation.js"></script>
 </body>
 </html>
