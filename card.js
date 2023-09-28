@@ -1,4 +1,3 @@
-
 export class Card {
     constructor(name, link, cardSelector,){
         this._name = name;
@@ -22,7 +21,8 @@ export class Card {
     }
     
     _like(){
-        this._like.classList.toggle(".element__like-active-visible");
+        console.log("like");
+        this._likeBtn.classList.toggle("element__like-active-visible");
     }
     
     _trash(){

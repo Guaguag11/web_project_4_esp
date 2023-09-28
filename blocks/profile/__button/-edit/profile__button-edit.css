@@ -1,9 +1,4 @@
 .profile__button-edit{
-    width: 21px;
-    height: 24px;
-    border: solid 1px #FFFFFF;
-    background-color: black;
-    color: white;
     position: absolute;
     top: 55px;
     right: 250px;

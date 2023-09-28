@@ -13,7 +13,9 @@ this._form.addEventListener("submit", (evt) => {
 evt.preventDefault();
 });
 this._firstInput.addEventListener("input", () => {
-    if (!this._firstInput.validity.valid || !this._secondInput.validity.valid) {
+    if (!this._firstInput.validity.valid || !this._secondInput.validity.valid) 
+    //(this._firstInput.textContent= " " & this._secondInput.textContent=" ")
+{
         this._firstSpan.classList.add("form__input-error-active");
         this._firstSpan.textContent = this._firstInput.validationMessage;
         this._button.classList.add("form__button_inactive");
@@ -27,7 +29,9 @@ this._firstInput.addEventListener("input", () => {
     });
     
     this._secondInput.addEventListener("input", () => {
-    if (!this._secondInput.validity.valid || !this._firstInput.validity.valid) {
+    if (!this._secondInput.validity.valid || !this._firstInput.validity.valid)
+//  (this._firsttInput.textContent= " " & this._secondInput.textContent=" ")
+    {
         this._secondSpan.classList.add("form__input-error-active");
         this._secondSpan.textContent = this._secondInput.validationMessage;
         this._button.classList.add("form__button_inactive");
