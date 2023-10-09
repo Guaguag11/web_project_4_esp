@@ -8,6 +8,5 @@
     right: -7px;
     bottom: 26px;
     visibility: hidden;
-    transition: all .5s;
     z-index: -1;
 }

@@ -48,8 +48,8 @@ export const link = document.querySelector(".form__info-url");
 export const node = document.querySelector(".element");
 export const elements = document.querySelector(".elements");
 
-export const likeButton = document.querySelectorAll(".element__like");
-export const like = document.querySelectorAll(".element__like-active");
+//export const likeButton = document.querySelectorAll(".element__like");
+//export const like = document.querySelectorAll(".element__like-active");
 export const deleteButton = document.querySelectorAll(".element__trash");
 export const card = document.querySelectorAll(".element");
 export const openPic = document.querySelectorAll(".element__image");
@@ -101,28 +101,28 @@ closeAddButton.addEventListener("click", function (evt) {
 });
 
 saveAddButton.addEventListener("click", function (evt) {
-//    const nodeClonado = node.cloneNode(true);
-//    formAdd.classList.toggle("add-visible");
+    const nodeClonado = node.cloneNode(true);
+    formAdd.classList.toggle("add-visible");
 
-//    const formTitle = nodeClonado.querySelector(".element__name");
-//    const formLink = nodeClonado.querySelector(".element__image");
-//    formTitle.textContent =title.value
-//    formLink.src = link.value
+    const formTitle = nodeClonado.querySelector(".element__name");
+    const formLink = nodeClonado.querySelector(".element__image");
+    formTitle.textContent =title.value
+    formLink.src = link.value
 
-//    elements.insertBefore(nodeClonado, elements.firstChild);
+    elements.insertBefore(nodeClonado, elements.firstChild);
 
-//    const formButtonLike = nodeClonado.querySelector(".element__like");
-//    const formTrash = nodeClonado.querySelector(".element__trash");
-//    const formLike = nodeClonado.querySelector(".element__like-active");
-//    const formPop = nodeClonado.querySelector(".element__image");
-//    const formName = nodeClonado.querySelector(".element__name");
+    const formButtonLike = nodeClonado.querySelector(".element__like");
+    const formTrash = nodeClonado.querySelector(".element__trash");
+    const formLike = nodeClonado.querySelector(".element__like-active");
+    const formPop = nodeClonado.querySelector(".element__image");
+    const formName = nodeClonado.querySelector(".element__name");
 
-//    formButtonLike.addEventListener("click", function () {
-//    formLike.classList.toggle("element__like-active-visible");
-//    });
-//    formTrash.addEventListener("click", function () {
-//    nodeClonado.remove();
-//})
+    formButtonLike.addEventListener("click", function () {
+    formLike.classList.toggle("element__like-active-visible");
+    });
+    formTrash.addEventListener("click", function () {
+    nodeClonado.remove();
+})
 
 formPop.addEventListener("click", function () {
     modalImage.classList.toggle("image__visible");

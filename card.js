@@ -13,6 +13,7 @@ export class Card {
         this._templateClonado = this._template.querySelector(".element").cloneNode(true);
         
         this._likeBtn = this._templateClonado.querySelector(".element__like");
+        this._activeLike = this._templateClonado.querySelector(".element__like-active");
         this._trashBtn = this._templateClonado.querySelector(".element__trash");
         this._image = this._templateClonado.querySelector(".element__image");
         this._title = this._templateClonado.querySelector(".element__name");
@@ -21,8 +22,8 @@ export class Card {
     }
     
     _like(){
-        console.log("like");
-        this._likeBtn.classList.toggle("element__like-active-visible");
+        this._activeLike.classList.toggle("element__like-active-visible");
+        console.log("se dió like");
     }
     
     _trash(){
@@ -37,7 +38,7 @@ export class Card {
     this._img.src = this._link;
     this._imageName.textContent = this._name;
     }
-
+    
     _setEventListeners(){
     this._likeBtn.addEventListener("click", this._like);
     this._trashBtn.addEventListener("click", this._trash);
