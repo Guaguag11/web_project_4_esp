@@ -75,7 +75,7 @@
 @import url(../blocks/form/__input/-error/-active/form__input-error-active.css);
 @import url(../blocks/form/__input/-error/-tag/form__input-error-tag.css);
 
-@import url(../blocks/form/__button/_inactive/form__button_inactive.css);
+@import url(../blocks/form/__button/--inactive/form__button--inactive.css);
 @import url(../blocks/form/__info/form__info.css);
 @import url(../blocks/form/__info/-name/form__info-name.css);
 

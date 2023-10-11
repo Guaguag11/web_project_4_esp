@@ -17,12 +17,12 @@ this._firstInput.addEventListener("input", () => {
 {
         this._firstSpan.classList.add("form__input-error-active");
         this._firstSpan.textContent = this._firstInput.validationMessage;
-        this._button.classList.add("form__button_inactive");
+        this._button.classList.add("form__button--inactive");
         this._button.disabled =true;
     } else {
         this._firstSpan.classList.remove("form__input-error-active");
         this._firstSpan.textContent = " ";
-        this._button.classList.remove("form__button_inactive");
+        this._button.classList.remove("form__button--inactive");
         this._button.disabled =false;
         }
     });
@@ -32,12 +32,12 @@ this._firstInput.addEventListener("input", () => {
     {
         this._secondSpan.classList.add("form__input-error-active");
         this._secondSpan.textContent = this._secondInput.validationMessage;
-        this._button.classList.add("form__button_inactive");
+        this._button.classList.add("form__button--inactive");
         this._button.disabled =true;
     } else {
         this._secondSpan.classList.remove("form__input-error-active");
         this._secondSpan.textContent = " ";
-        this._button.classList.remove("form__button_inactive");
+        this._button.classList.remove("form__button--inactive");
         this._button.disabled =false;
         }
     });
