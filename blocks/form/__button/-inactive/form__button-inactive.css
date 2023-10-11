@@ -1,10 +1,10 @@
-.form__button--inactive{
+.form__button-inactive{
     cursor: not-allowed;
     background-color: rgb(229, 229, 229) !important;
     transition: all 0.3s;
 }
 
-.form__button--inactive
+.form__button-inactive
 > * {
 pointer-events: none;
 } 
