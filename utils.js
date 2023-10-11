@@ -45,18 +45,16 @@ export const formAdd = document.querySelector(".add");
 export const title = document.querySelector(".form__info-title");
 export const link = document.querySelector(".form__info-url");
 
-export const node = document.querySelector(".element");
+export const node = document.querySelector(".template");
 export const elements = document.querySelector(".elements");
 
 //export const likeButton = document.querySelectorAll(".element__like");
 //export const like = document.querySelectorAll(".element__like-active");
 export const deleteButton = document.querySelectorAll(".element__trash");
-export const card = document.querySelectorAll(".element");
 export const openPic = document.querySelectorAll(".element__image");
 export const trueName = document.querySelectorAll(".element__name");
 export const closePic = document.querySelector(".image__pop-close");
 export const modalImage = document.querySelector(".image");
-export const elementName = document.querySelector(".element");
 export const imageName = document.querySelector(".image__name");
 export const img = modalImage.querySelector(".image__pop-up");
 
@@ -101,7 +99,7 @@ closeAddButton.addEventListener("click", function (evt) {
 });
 
 saveAddButton.addEventListener("click", function (evt) {
-    const nodeClonado = node.cloneNode(true);
+    const nodeClonado = node.content.querySelector(".element").cloneNode(true);
     formAdd.classList.toggle("add-visible");
 
     const formTitle = nodeClonado.querySelector(".element__name");

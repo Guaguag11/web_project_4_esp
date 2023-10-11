@@ -14,7 +14,6 @@ evt.preventDefault();
 });
 this._firstInput.addEventListener("input", () => {
     if (!this._firstInput.validity.valid || !this._secondInput.validity.valid) 
-//    (this._firstInput.value= " " & this._secondInput.value=" ")
 {
         this._firstSpan.classList.add("form__input-error-active");
         this._firstSpan.textContent = this._firstInput.validationMessage;
@@ -30,7 +29,6 @@ this._firstInput.addEventListener("input", () => {
     
     this._secondInput.addEventListener("input", () => {
     if (!this._secondInput.validity.valid || !this._firstInput.validity.valid )
-//    (this._firstInput.value= " " & this._secondInput.value=" ")
     {
         this._secondSpan.classList.add("form__input-error-active");
         this._secondSpan.textContent = this._secondInput.validationMessage;
