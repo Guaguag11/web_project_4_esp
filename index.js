@@ -15,7 +15,7 @@ import { initialCards,
 
 import {Card} from "./Card.js"
 
-import {FormValidator} from "./Formvalidation.js"
+import {FormValidator} from "./FormValidation.js"
 
 initialCards.forEach(function (element) {
     const cardFinal = new Card(element.name, element.link, ".template");
