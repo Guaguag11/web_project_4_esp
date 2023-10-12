@@ -1,4 +1,5 @@
 export class FormValidator {
+    
     constructor(form, firstInput, secondInput, firstSpan, secondSpan, button) {
     this._form = form;
     this._firstInput = firstInput;
