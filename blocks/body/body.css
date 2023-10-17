@@ -4,7 +4,7 @@ body{
     height: auto;
     font-family: Inter;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +12,7 @@ body{
     opacity: 100%;
     max-width: 1280px;
     min-width: 320px;
+    width: 1280px;
 }
 
 @media screen and (min-width: 320px) and (max-width:600px){
